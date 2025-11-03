@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas Orquídea Cocina | Asegura tu mesa</title>
+  <meta name="description" content="Reserva en Orquídea Cocina y vive una experiencia gastronómica moderna con ingredientes de temporada y hospitalidad excepcional.">
+  <meta property="og:title" content="Reserva en Orquídea Cocina">
+  <meta property="og:description" content="Agenda tu visita al restaurante Orquídea Cocina y celebra con platillos de autor en un ambiente botánico.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="https://orquideacocina.example/reservas.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=1600&q=80">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <div class="sr-only" aria-live="polite" data-live-region></div>
+  <header>
+    <div class="nav-container">
+      <a class="logo" href="index.html">Orquídea Cocina</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menú</span>
+      </button>
+      <nav id="primary-navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" data-nav-link>Inicio</a></li>
+          <li><a href="menu.html" data-nav-link>Menú</a></li>
+          <li><a href="reservas.html" data-nav-link class="is-active" aria-current="page">Reservas</a></li>
+          <li><a href="sobre.html" data-nav-link>Sobre nosotros</a></li>
+          <li><a href="contacto.html" data-nav-link>Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-hero hero-reservas">
+      <div>
+        <h1>Haz tu reserva</h1>
+        <p>Cuéntanos cuándo quieres visitarnos y prepararemos cada detalle para tu velada.</p>
+      </div>
+    </section>
+
+    <section class="container reservations" aria-labelledby="form-reservas">
+      <div>
+        <h2 class="section-title" id="form-reservas">Reserva tu mesa</h2>
+        <p class="section-subtitle">Completa el formulario y nuestro equipo confirmará tu reserva a la brevedad.</p>
+        <p class="policy">Las cancelaciones son gratuitas hasta 24 horas antes de tu reservación. Después de ese periodo se aplicará un cargo de cortesía de $300 MXN por persona.</p>
+      </div>
+      <div>
+        <form data-reservation-form novalidate aria-describedby="nota-politica">
+          <div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Nombre y apellido">
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="nombre@ejemplo.com">
+          </div>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" placeholder="Ej. +52 55 1234 5678">
+          </div>
+          <div>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+          <div>
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required>
+          </div>
+          <div>
+            <label for="personas">Número de personas</label>
+            <input type="number" id="personas" name="personas" min="1" max="12" required placeholder="Ej. 4">
+          </div>
+          <div>
+            <label for="preferencias">Preferencias o alergias</label>
+            <textarea id="preferencias" name="preferencias" maxlength="200" placeholder="Cuéntanos si celebras algo especial o tienes restricciones."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Confirmar reserva</button>
+          <p class="policy" id="nota-politica">Al enviar aceptas nuestras políticas de cancelación y de uso de datos personales.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" data-modal hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-reserva-titulo">
+    <div class="modal-content">
+      <h3 id="modal-reserva-titulo">¡Gracias por reservar!</h3>
+      <p data-modal-message>Tu reserva ha sido confirmada.</p>
+      <button type="button" class="close-modal" data-close-modal>Cerrar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-top">
+        <section class="footer-section" aria-labelledby="footer-horario">
+          <h4 id="footer-horario">Horario</h4>
+          <p>Lunes a sábado: 13:00 - 23:00 hrs<br>Domingo: 13:00 - 18:00 hrs</p>
+        </section>
+        <section class="footer-section" aria-labelledby="footer-contacto">
+          <h4 id="footer-contacto">Contacto</h4>
+          <ul>
+            <li>Av. Jardín Botánico 123, CDMX</li>
+            <li>Tel. +52 55 1234 5678</li>
+            <li>reservas@orquideacocina.com</li>
+          </ul>
+        </section>
+        <section class="footer-section" aria-labelledby="footer-redes">
+          <h4 id="footer-redes">Síguenos</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com" aria-label="Instagram de Orquídea Cocina">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0 2.1A2.9 2.9 0 1 0 14.9 12A2.9 2.9 0 0 0 12 9.1m6.4-2.75a1 1 0 1 1-1 1a1 1 0 0 1 1-1"/></svg>
+            </a>
+            <a href="https://www.facebook.com" aria-label="Facebook de Orquídea Cocina">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M13 22h-3v-9H8v-3h2V8.5C10 6 11.5 4 14.7 4H17v3h-1.7C14 7 13 7.5 13 8.8V10h3l-.4 3H13z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn de Orquídea Cocina">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5A1.75 1.75 0 1 1 5.19 4.75A1.75 1.75 0 0 1 6.94 6.5M5 9h3.75v11H5zm6.38 0H15v1.71h.05c.53-1 1.82-2.06 3.75-2.06c4 0 4.75 2.62 4.75 6v7.35h-3.75v-6.52c0-1.56 0-3.56-2.17-3.56s-2.5 1.7-2.5 3.43V20H11.4z"/></svg>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year></span> Orquídea Cocina. Todos los derechos reservados.</p>
+        <a href="mailto:reservas@orquideacocina.com?subject=Aviso%20de%20Privacidad">Aviso de privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
