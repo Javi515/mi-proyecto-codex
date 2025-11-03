@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Orquídea Cocina | Sabores de temporada</title>
+  <meta name="description" content="Explora el menú de Orquídea Cocina: entradas creativas, platos fuertes de autor, postres botánicos y bebidas artesanales.">
+  <meta property="og:title" content="Menú Orquídea Cocina">
+  <meta property="og:description" content="Descubre los platillos de temporada, opciones veganas y coctelería de autor en Orquídea Cocina.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="https://orquideacocina.example/menu.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <div class="sr-only" aria-live="polite" data-live-region></div>
+  <header>
+    <div class="nav-container">
+      <a class="logo" href="index.html">Orquídea Cocina</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menú</span>
+      </button>
+      <nav id="primary-navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" data-nav-link>Inicio</a></li>
+          <li><a href="menu.html" data-nav-link class="is-active" aria-current="page">Menú</a></li>
+          <li><a href="reservas.html" data-nav-link>Reservas</a></li>
+          <li><a href="sobre.html" data-nav-link>Sobre nosotros</a></li>
+          <li><a href="contacto.html" data-nav-link>Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-hero hero-menu">
+      <div>
+        <h1>Menú de temporada</h1>
+        <p>Ingredientes frescos, técnicas contemporáneas y presentaciones que despiertan los sentidos.</p>
+      </div>
+    </section>
+
+    <section class="container" aria-labelledby="filtros-menu">
+      <div class="menu-header">
+        <h2 class="section-title" id="filtros-menu">Explora nuestras categorías</h2>
+        <p class="section-subtitle">Selecciona una categoría para descubrir los platillos destacados de Orquídea Cocina.</p>
+      </div>
+      <div class="menu-filters" data-menu-filters role="group" aria-label="Filtros del menú">
+        <button type="button" class="is-active" data-filter="all" aria-pressed="true">Todos</button>
+        <button type="button" data-filter="entradas" aria-pressed="false">Entradas</button>
+        <button type="button" data-filter="fuertes" aria-pressed="false">Fuertes</button>
+        <button type="button" data-filter="postres" aria-pressed="false">Postres</button>
+        <button type="button" data-filter="bebidas" aria-pressed="false">Bebidas</button>
+      </div>
+      <div class="menu-grid">
+        <!-- 12 items -->
+        <article class="menu-item" data-menu-item data-category="entradas vegano">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Ensalada de brotes verdes con flores" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Jardín de brotes</h3>
+            <p>Brotes orgánicos, vinagreta cítrica y pétalos de pensamiento.</p>
+            <div class="menu-price">$180 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Vegano</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="entradas sin-gluten">
+          <img src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&w=800&q=80" alt="Sopa cremosa servida en plato hondo" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Crema de alcachofa</h3>
+            <p>Alcachofas rostizadas, aceite de trufa y semillas de calabaza.</p>
+            <div class="menu-price">$195 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="entradas">
+          <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=800&q=80" alt="Ceviche en plato blanco" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Ceviche cítrico</h3>
+            <p>Pesca del día, leche de tigre de naranja y maíz tostado.</p>
+            <div class="menu-price">$210 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="fuertes">
+          <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&w=800&q=80" alt="Pasta con salsa verde" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Pappardelle verde</h3>
+            <p>Pasta fresca con pesto de quelites, queso de cabra y limón confitado.</p>
+            <div class="menu-price">$320 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Vegano</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="fuertes sin-gluten">
+          <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=800&q=80" alt="Filete servido con vegetales" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Lomo de res sous-vide</h3>
+            <p>Purée de coliflor ahumada, chimichurri de hierbas y jugo de res.</p>
+            <div class="menu-price">$420 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="fuertes">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Plato principal con pescado" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Pesca en flor</h3>
+            <p>Pescado al vapor, salsa de chile guajillo y espuma de coco.</p>
+            <div class="menu-price">$365 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="postres">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Postre con helado y frutos rojos" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Helado de bugambilia</h3>
+            <p>Helado artesanal, crumble de almendra y coulis de frambuesa.</p>
+            <div class="menu-price">$180 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="postres vegano">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80" alt="Pastel de chocolate con frutas" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Tarta bosque oscuro</h3>
+            <p>Ganache de cacao, frutos rojos y sorbete de mora azul.</p>
+            <div class="menu-price">$190 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Vegano</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="postres">
+          <img src="https://images.unsplash.com/photo-1600093463592-4a2489860f94?auto=format&fit=crop&w=800&q=80" alt="Postre con crema y cítricos" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Cítricos flameados</h3>
+            <p>Crema de yuzu, merengue crocante y caramelo de romero.</p>
+            <div class="menu-price">$175 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="bebidas">
+          <img src="https://images.unsplash.com/photo-1458644267420-66bc8a5f21e4?auto=format&fit=crop&w=800&q=80" alt="Cóctel con hielo y flores" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Coctel Orquídea</h3>
+            <p>Gin botánico, cordial de hibiscus y bitters cítricos.</p>
+            <div class="menu-price">$160 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="bebidas">
+          <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?auto=format&fit=crop&w=800&q=80" alt="Vaso de bebida fría con café" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Cold brew floral</h3>
+            <p>Café de especialidad infusionado con lavanda y miel de agave.</p>
+            <div class="menu-price">$95 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Vegano</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="bebidas">
+          <img src="https://images.unsplash.com/photo-1527169402691-feff5539e52c?auto=format&fit=crop&w=800&q=80" alt="Copa de vino tinto" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Selección de vinos</h3>
+            <p>Etiquetas mexicanas y biodinámicas seleccionadas por nuestro sommelier.</p>
+            <div class="menu-price">$220 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="fuertes">
+          <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&q=80" alt="Plato de pollo glaseado" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Pollo mielado</h3>
+            <p>Pechuga de pollo orgánico, glaseado de miel y puré de camote morado.</p>
+            <div class="menu-price">$310 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Sin gluten</span>
+            </div>
+          </div>
+        </article>
+        <article class="menu-item" data-menu-item data-category="entradas vegano">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Plato con hummus y vegetales" loading="lazy" width="800" height="533">
+          <div class="menu-item-content">
+            <h3>Hummus verde</h3>
+            <p>Garbanzos orgánicos, hierbas frescas y crudités de temporada.</p>
+            <div class="menu-price">$185 MXN</div>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag">Vegano</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="cta cta-inline">
+        <h2>¿Listo para saborear?</h2>
+        <p>Reserva tu experiencia gastronómica y disfruta de nuestro menú completo.</p>
+        <a class="btn btn-primary" href="reservas.html">Reservar ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-top">
+        <section class="footer-section" aria-labelledby="footer-horario">
+          <h4 id="footer-horario">Horario</h4>
+          <p>Lunes a sábado: 13:00 - 23:00 hrs<br>Domingo: 13:00 - 18:00 hrs</p>
+        </section>
+        <section class="footer-section" aria-labelledby="footer-contacto">
+          <h4 id="footer-contacto">Contacto</h4>
+          <ul>
+            <li>Av. Jardín Botánico 123, CDMX</li>
+            <li>Tel. +52 55 1234 5678</li>
+            <li>reservas@orquideacocina.com</li>
+          </ul>
+        </section>
+        <section class="footer-section" aria-labelledby="footer-redes">
+          <h4 id="footer-redes">Síguenos</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com" aria-label="Instagram de Orquídea Cocina">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0 2.1A2.9 2.9 0 1 0 14.9 12A2.9 2.9 0 0 0 12 9.1m6.4-2.75a1 1 0 1 1-1 1a1 1 0 0 1 1-1"/></svg>
+            </a>
+            <a href="https://www.facebook.com" aria-label="Facebook de Orquídea Cocina">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M13 22h-3v-9H8v-3h2V8.5C10 6 11.5 4 14.7 4H17v3h-1.7C14 7 13 7.5 13 8.8V10h3l-.4 3H13z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn de Orquídea Cocina">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5A1.75 1.75 0 1 1 5.19 4.75A1.75 1.75 0 0 1 6.94 6.5M5 9h3.75v11H5zm6.38 0H15v1.71h.05c.53-1 1.82-2.06 3.75-2.06c4 0 4.75 2.62 4.75 6v7.35h-3.75v-6.52c0-1.56 0-3.56-2.17-3.56s-2.5 1.7-2.5 3.43V20H11.4z"/></svg>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year></span> Orquídea Cocina. Todos los derechos reservados.</p>
+        <a href="mailto:reservas@orquideacocina.com?subject=Aviso%20de%20Privacidad">Aviso de privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
